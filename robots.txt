@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /anime-quiz/
+Disallow: /Bootstrap-Cameo/
