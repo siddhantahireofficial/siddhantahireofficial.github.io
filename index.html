@@ -188,6 +188,10 @@
                                 <a href="#homePills" id="home-pill" class="nav-link rounded-0 active" data-toggle="pill"
                                     role="tab" aria-controls="homePills" aria-expanded="true">React</a>
                             </li> -->
+			    <li class="nav-item">
+                                <a href="#reactjs" id="reactjs-pill" class="nav-link rounded-0 active" data-toggle="pill" role="tab"
+                                    aria-controls="reactjsPills" aria-expanded="false">ReactJS</a>
+                            </li>
                             <li class="nav-item">
                                 <a href="#nodejs" id="nodejs-pill" class="nav-link rounded-0 active" data-toggle="pill" role="tab"
                                     aria-controls="nodejsPills" aria-expanded="false">NodeJS</a>
@@ -202,7 +206,36 @@
                             </li>
                         </ul>
                         <div class="tab-content">
-                            <div id="nodejs" class="tab-pane active">
+			    <div id="reactjs" class="tab-pane active">
+                                <div class="card border-0">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 col-lg-4 text-center">
+                                                <figure class="figure">
+                                                    <div class="content">
+                                                        <a href="#tic_tac_toe" data-toggle="modal"><div class="content-overlay"></div><img src="img/tic_tac_toe.PNG" alt="tic tac toe game"
+                                                            class="content-image figure-img img-fluid d-block mx-auto w-100 shadow-sm rounded-0"
+                                                            alt="Figure image" ></a>                
+                                                    </div>  
+                                                    <figcaption class="figure-caption text-center">
+                                                        <h6>tic tac toe<small>(15-11-20)</small></h6>
+                                                    </figcaption>
+                                                    <div class="row no-gutters text-center">
+                                                        <div class="col">
+                                                            <button type="button" class="btn btn-secondary" data-target="#tic_tac_toe" data-toggle="modal">Know More</button>
+                                                            
+                                                      
+                                                        </div>
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div id="nodejs" class="tab-pane">
                                 <div class="card border-0">
                                     <div class="card-body">
                                         <div class="row">
@@ -407,6 +440,35 @@
     </footer><!--//footer-->
 
     <!-- Model -->
+     <div id="tic_tac_toe" tabindex="-1" class="modal fade" aria-labbeledby="tic_tac_toe" aria-hidden="true" >
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 id="anime_quiz">tic_tac_toe</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <img src="img/anime_quiz.png" class="w-100" alt="tic tac toe game ">
+                <h3 class="text-left"><b>About</b></h3>
+                <p class="text-left"><h6 class="text-left">
+		    Tic-tac-toe is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
+		    I made this game while learning ReactJS.
+                </p>
+                <h3 class="text-left"><b>Technologies</b></h3>
+                <ul class="text-left">
+                    <li><h6>ReactJS</h6></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+              <a href="https://github.com/siddhant-ahire/tic-toc-toe" class="btn btn-success" target="_blank">< CODE ></a>
+              <a href="https://siddhant-ahire.github.io/tic-toc-toe/dist/" class="btn btn-danger" target="_blank">Live Demo</a>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <div id="anime_quiz" tabindex="-1" class="modal fade" aria-labbeledby="anime_quiz" aria-hidden="true" >
         <div class="modal-dialog modal-dialog-scrollable" role="document">
           <div class="modal-content">
