@@ -1,0 +1,164 @@
+.RecentPosts {
+    background-color: var(--skyblue);
+    height: 100%;
+}
+
+.RecentPosts .RecentPostContainer {
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    height: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    padding-top: 2%;
+    
+}
+
+.RecentPosts .viewAll {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 400;
+
+}
+
+.RecentPosts .viewAll {
+    color: var(--navyblue);
+}
+
+.RecentPosts .viewAll span:nth-child(2) {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--seablue);
+
+}
+
+.RecentPosts .RecentPostContainer .post{
+    margin:1rem 0.5% 0rem 0rem;
+    width: 49%;
+    min-height: 295px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+
+.RecentPosts .RecentPostContainer .post:nth-child(odd) {
+    margin:1rem 0rem 0rem 0.5%;
+}
+.RecentPosts .RecentPostContainer .post:last-child {
+    margin:1rem 0rem 1rem 0.5%;
+}
+
+.RecentPosts .RecentPostContainer .post h3{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38.19px;
+    color:var(--navyblue);
+    margin-bottom: 1rem;
+}
+
+.RecentPosts .RecentPostContainer .post span{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26.44px;
+    color:var(--navyblue);
+}
+.RecentPosts .RecentPostContainer .post span:nth-child(1){
+    margin-right: 30px;
+}
+.RecentPosts .RecentPostContainer .post span:nth-child(2){
+    width: 0px;
+    height: 21px;
+    border: 0.4px solid var(--black);
+}
+.RecentPosts .RecentPostContainer .post span:nth-child(3){
+    margin-left: 30px;
+}
+
+.RecentPosts .RecentPostContainer .post p{
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.5px;
+    color:var(--navyblue);
+}
+
+/* for mobile */
+@media screen and (max-width:768px) {
+    .RecentPosts .RecentPostContainer{
+        flex-direction: row;
+    }
+
+    .RecentPosts .RecentPostContainer .post{
+        margin:1rem 0rem 0rem 0rem;
+        width: 100%;
+    }
+    .RecentPosts .RecentPostContainer .post h3{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 30px;
+        color:var(--navyblue);
+        margin-bottom: 1rem;
+    }
+    .RecentPosts .RecentPostContainer .post span{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        color:var(--navyblue);
+    }
+    .RecentPosts .viewAll {
+        width: 860px;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 400;
+    
+    }
+    .RecentPosts .viewAll span:nth-child(2) {
+        display: none;
+    }
+    .RecentPosts .RecentPostContainer .post:last-child {
+        margin:1rem 0rem 1rem 0rem;    }
+}
+
+/* For tablet */
+
+/* @media screen and (max-width:1024px) {
+    .RecentPosts .RecentPostContainer{
+        flex-direction: row;
+    }
+    .RecentPosts .RecentPostContainer .post{
+        margin:1rem 0rem 0rem 0rem;
+        width: 100%;
+    }   
+    .RecentPosts .RecentPostContainer .post h3{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 30px;
+        color:var(--navyblue);
+        margin-bottom: 1rem;
+    }
+    .RecentPosts .RecentPostContainer .post span{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        color:var(--navyblue);
+    }
+    .RecentPosts .viewAll {
+        width: 860px;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 400;
+    
+    }
+    .RecentPosts .viewAll span:nth-child(2) {
+        display: none;
+    }
+    .RecentPosts .RecentPostContainer .post:last-child {
+        margin:1rem 0rem 1rem 0rem;
+    }
+} */
