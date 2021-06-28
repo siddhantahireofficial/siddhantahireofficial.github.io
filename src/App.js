@@ -11,9 +11,9 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <>
-      <div className="container">
+      {/* <div className="container">
         <Navbar />
-      </div>
+      </div> */}
 
       <Switch>
         <Route exact path="/"><Home /></Route>

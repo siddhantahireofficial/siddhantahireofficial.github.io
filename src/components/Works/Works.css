@@ -1,7 +1,8 @@
+.works {
+    margin: 0% 7% 0% 7%;
+}
 .work {
     display: flex;
-    padding: 1rem;
-
 }
 
 .worksbig{
@@ -9,7 +10,7 @@
 }
 
 .works h4{
-    padding: 1rem;
+    padding: 1rem 0rem;
 }
 
 .works h1{
@@ -71,8 +72,13 @@
     max-width: 100%;
     margin: 1rem;
 }
+
+
 /* for mobile */
 @media screen and (max-width:768px) {
+    .works{
+        margin: 0;
+    }
     .work {
         display: block;
     }
@@ -86,20 +92,47 @@
     }
     .work .col-2 h3 {
         font-size: 22px;
-        padding-top: 2rem;
-        padding-bottom: 0.8rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0rem;
     }
     .work .col-2 {
         padding: 0;
     }
     .work .col-2 p{
         text-align: start;
+        margin-top: 0.5rem;
     }
     .works h4{
         padding:1rem 0rem 0rem 0rem;
         text-align: center;
     }
-    .works {
-        margin: 0 2% 0 2%;
+    .year-button {
+        line-height: 30px;
+    }
+    .work {
+        margin: auto;
+        width: 50%;
     }
 }
+
+@media screen and (max-width:540px) {
+    .work {
+        margin: auto;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .work {
+        margin: auto;
+        width: 85%;
+    }
+}
+
+
+/* @media screen and (max-width:360px) {
+    .work {
+        margin: auto;
+        width: 95%;
+    }
+} */

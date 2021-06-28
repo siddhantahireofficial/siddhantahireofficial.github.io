@@ -35,7 +35,7 @@
 }
 
 .RecentPosts .RecentPostContainer .post{
-    margin:1rem 0.5% 0rem 0rem;
+    margin:1rem 1% 0rem 0rem;
     width: 49%;
     min-height: 295px;
     background-color: var(--white);
@@ -46,10 +46,10 @@
 
 
 .RecentPosts .RecentPostContainer .post:nth-child(odd) {
-    margin:1rem 0rem 0rem 0.5%;
+    margin:1rem 0rem 0rem 1%;
 }
 .RecentPosts .RecentPostContainer .post:last-child {
-    margin:1rem 0rem 1rem 0.5%;
+    margin:1rem 0rem 1rem 1%;
 }
 
 .RecentPosts .RecentPostContainer .post h3{

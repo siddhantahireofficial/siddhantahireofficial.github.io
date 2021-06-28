@@ -8,7 +8,7 @@ const Works = ({works}) => {
     return (
             <div className="container">
 
-            <div className={`works ${works&& 'worksbig'}`}>
+            <div className={`works`}>
             {!works &&<h4>Featured Works</h4>
             }
                 {data.Works.map((v,i) => (
