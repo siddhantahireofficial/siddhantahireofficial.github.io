@@ -1,7 +1,7 @@
 /* for desktop */
 .IntroContainer {
     display: flex;
-    height: 100vh;
+    min-height: 90vh;
     align-items: center;
     
 }
@@ -117,8 +117,8 @@ background-color:var(--skyblue);
 }
 
 .skills .list span svg{
-    width: 25px;
-    height: 25px;
+    width: 2rem;
+    height: 2rem;
 }
 
 /* for mobile */

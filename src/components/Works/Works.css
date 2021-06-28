@@ -6,7 +6,7 @@
 }
 
 .worksbig{
-    margin: 0% 7% 0% 7%;
+    margin:0;
 }
 
 .works h4{
@@ -70,7 +70,7 @@
     height: 0px;
     border: 0.5px solid var(--hline);
     max-width: 100%;
-    margin: 1rem;
+    margin: 1rem 0rem 1rem 0rem;
 }
 
 
