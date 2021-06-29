@@ -13,12 +13,12 @@ const Intro = () => {
 
                 <h1 className="heading1">
                     {data.Introduction.heading}<br />
-                    <Typed 
+                    {/* <Typed 
                         strings={[`${data.Introduction.heading2}`,`${data.Introduction.heading2}`]}
                         typeSpeed={40}
                         backSpeed={50}
                         loop
-                        />
+                        /> */}
                 </h1>
                         </Bounce>
                         <Bounce left duration={5000}>
@@ -35,7 +35,7 @@ const Intro = () => {
                 <div className="list">
 
                 {
-                    data.Introduction.skills.map((s,i)=><span key={i}>{s}</span>)
+                    data.Introduction.skills.map((s,i)=><Bounce top={i%2 === 0 ? true : false} bottom={i%2 != 0 ? true : false} duration={i*200+5000}><div key={i}>{s}</div></Bounce>)
                 }
                 </div>   
                 </div>

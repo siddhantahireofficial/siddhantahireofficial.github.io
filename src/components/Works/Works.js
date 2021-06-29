@@ -14,10 +14,12 @@ const Works = ({works}) => {
             {!works &&<h4>Featured Works</h4>
             }
                 {data.Works.map((v,i) => (
-                    <Pulse left={i%2 === 0 ? true : false} right={i%2 != 0 ? true : false}>
+                    // <Pulse left={i%2 === 0 ? true : false} right={i%2 != 0 ? true : false}>
+                    <>
                     <Work data={v} index={i}/>
                     <div className="horizontal-line"></div>
-                    </Pulse>
+                    </>
+                    // </Pulse>
                     
                 ))}
             </div>

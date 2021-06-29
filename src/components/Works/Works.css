@@ -103,7 +103,7 @@
         margin-top: 0.5rem;
     }
     .works h4{
-        padding:1rem 0rem 0rem 0rem;
+        padding:1rem 0rem 1rem 0rem;
         text-align: center;
     }
     .year-button {
@@ -129,10 +129,3 @@
     }
 }
 
-
-/* @media screen and (max-width:360px) {
-    .work {
-        margin: auto;
-        width: 95%;
-    }
-} */

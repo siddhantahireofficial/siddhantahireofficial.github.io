@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Fade from 'react-reveal/Fade'
 import Pulse from 'react-reveal/Pulse'
 
 
 
-const Post = ({blog,data, className}) => {
+const Post = ({blog, data, className}) => {
     return (
         <>
         {data.map((e,i)=>(<>
-        <Pulse left={i%2 === 0 ? true : false} right={i%2 != 0 ? true : false}>
+        {/* <Pulse left={i%2 === 0 ? true : false} right={i%2 != 0 ? true : false}> */}
             <div className={className} key={i}>
                 <h3>{e.name}</h3>
                 <div>
@@ -22,7 +22,7 @@ const Post = ({blog,data, className}) => {
                     <div className="horizontal-line2"></div>
                 }
             </div>
-        </Pulse>
+        {/* </Pulse> */}
                 </>
             ))
         }

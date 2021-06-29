@@ -1,26 +1,36 @@
 .RecentPosts {
     background-color: var(--skyblue);
-    height: 100%;
+    max-height: 500px;
+    transition: all .8s ease-out;
+}
+
+.expand {
+    max-height: 3000px;
 }
 
 .RecentPosts .RecentPostContainer {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: flex-start;
     height: 100%;
     flex-wrap: wrap;
     margin-bottom: 0px;
     padding-top: 2%;
-    
 }
 
+.RecentPostContainer span {
+    margin:0.5rem 0 0 0;
+}
+.RecentPostContainer>h3 {
+    margin: 1rem 0rem;
+    color: var(--seablue);
+}
 .RecentPosts .viewAll {
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     font-size: 22px;
     font-weight: 400;
-
 }
 
 .RecentPosts .viewAll {
@@ -31,11 +41,10 @@
     font-size: 16px;
     font-weight: 400;
     color: var(--seablue);
-
 }
 
-.RecentPosts .RecentPostContainer .post{
-    margin:1rem 1% 0rem 0rem;
+.RecentPosts .RecentPostContainer .post {
+    margin: 1rem 1% 0rem 0rem;
     width: 49%;
     min-height: 295px;
     background-color: var(--white);
@@ -44,70 +53,77 @@
     padding: 1rem;
 }
 
-
 .RecentPosts .RecentPostContainer .post:nth-child(odd) {
-    margin:1rem 0rem 0rem 1%;
-}
-.RecentPosts .RecentPostContainer .post:last-child {
-    margin:1rem 0rem 1rem 1%;
+    margin: 1rem 0rem 0rem 1%;
 }
 
-.RecentPosts .RecentPostContainer .post h3{
+.RecentPosts .RecentPostContainer .post:last-child {
+    margin: 1rem 0rem 2.5rem 1%;
+}
+
+.RecentPosts .RecentPostContainer .post h3 {
     font-weight: 700;
     font-size: 26px;
     line-height: 38.19px;
-    color:var(--navyblue);
+    color: var(--navyblue);
     margin-bottom: 1rem;
 }
 
-.RecentPosts .RecentPostContainer .post span{
+.RecentPosts .RecentPostContainer .post span {
     font-weight: 400;
     font-size: 18px;
     line-height: 26.44px;
-    color:var(--navyblue);
+    color: var(--navyblue);
 }
-.RecentPosts .RecentPostContainer .post span:nth-child(1){
+
+.RecentPosts .RecentPostContainer .post span:nth-child(1) {
     margin-right: 30px;
 }
-.RecentPosts .RecentPostContainer .post span:nth-child(2){
+
+.RecentPosts .RecentPostContainer .post span:nth-child(2) {
     width: 0px;
     height: 21px;
     border: 0.4px solid var(--black);
 }
-.RecentPosts .RecentPostContainer .post span:nth-child(3){
+
+.RecentPosts .RecentPostContainer .post span:nth-child(3) {
     margin-left: 30px;
 }
 
-.RecentPosts .RecentPostContainer .post p{
+.RecentPosts .RecentPostContainer .post p {
     margin-top: 1rem;
     font-weight: 400;
     font-size: 16px;
     line-height: 23.5px;
-    color:var(--navyblue);
+    color: var(--navyblue);
 }
-
 /* for mobile */
+
 @media screen and (max-width:768px) {
-    .RecentPosts .RecentPostContainer{
+    .RecentPosts {
+        background-color: var(--skyblue);
+        max-height: 2000px;
+        transition: all .8s ease;
+    }
+    .RecentPosts .RecentPostContainer {
         flex-direction: row;
     }
-
-    .RecentPosts .RecentPostContainer .post{
-        margin:1rem 0rem 0rem 0rem;
+    .RecentPosts .RecentPostContainer .post {
+        margin: 1rem 0rem 0rem 0rem;
         width: 100%;
     }
-    .RecentPosts .RecentPostContainer .post h3{
+    .RecentPosts .RecentPostContainer .post h3 {
         font-weight: 700;
         font-size: 22px;
         line-height: 30px;
-        color:var(--navyblue);
+        color: var(--navyblue);
         margin-bottom: 1rem;
     }
-    .RecentPosts .RecentPostContainer .post span{
+    .RecentPosts .RecentPostContainer .post span {
         font-weight: 400;
         font-size: 16px;
         line-height: 23px;
-        color:var(--navyblue);
+        color: var(--navyblue);
     }
     .RecentPosts .viewAll {
         width: 860px;
@@ -115,50 +131,18 @@
         justify-content: center;
         font-size: 18px;
         font-weight: 400;
-    
     }
     .RecentPosts .viewAll span:nth-child(2) {
         display: none;
     }
+
+    .RecentPosts .RecentPostContainer .post:nth-child(odd) {
+        margin: 1rem 1rem 0rem 1rem;
+    }
+    .RecentPosts .RecentPostContainer .post {
+        margin: 1rem 1rem 0rem 1rem;
+    }
     .RecentPosts .RecentPostContainer .post:last-child {
-        margin:1rem 0rem 1rem 0rem;    }
+        margin: 1rem 1rem 2rem 1rem;
+    }
 }
-
-/* For tablet */
-
-/* @media screen and (max-width:1024px) {
-    .RecentPosts .RecentPostContainer{
-        flex-direction: row;
-    }
-    .RecentPosts .RecentPostContainer .post{
-        margin:1rem 0rem 0rem 0rem;
-        width: 100%;
-    }   
-    .RecentPosts .RecentPostContainer .post h3{
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 30px;
-        color:var(--navyblue);
-        margin-bottom: 1rem;
-    }
-    .RecentPosts .RecentPostContainer .post span{
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 23px;
-        color:var(--navyblue);
-    }
-    .RecentPosts .viewAll {
-        width: 860px;
-        display: flex;
-        justify-content: center;
-        font-size: 18px;
-        font-weight: 400;
-    
-    }
-    .RecentPosts .viewAll span:nth-child(2) {
-        display: none;
-    }
-    .RecentPosts .RecentPostContainer .post:last-child {
-        margin:1rem 0rem 1rem 0rem;
-    }
-} */

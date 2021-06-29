@@ -12,7 +12,7 @@
 .IntroContainer .col-2 {
     position:relative;
     flex:1;
-    margin-bottom: 8rem;
+    margin-bottom: 12rem;
 }
 
 
@@ -110,13 +110,16 @@ background-color:var(--skyblue);
 
 .skills .list{
     padding-top: 0rem;
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 
-.skills .list span{
+.skills .list div{
     margin: 0px 5px 0px 5px;
 }
 
-.skills .list span svg{
+.skills .list div svg{
     width: 2rem;
     height: 2rem;
 }
