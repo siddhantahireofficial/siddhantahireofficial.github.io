@@ -1,13 +1,8 @@
 .RecentPosts {
     background-color: var(--skyblue);
-    max-height: 500px;
-    transition: all .8s ease-out;
-}
+    height: 100%;
 
-.expand {
-    max-height: 3000px;
 }
-
 .RecentPosts .RecentPostContainer {
     display: flex;
     justify-content: center;

@@ -15,6 +15,7 @@ const RecentPosts = ({blog}) => {
         setViewAll(!viewAll);
     }
     return (
+        
         <div className={!blog ? `RecentPosts ${!viewAll&& 'expand'}` : "RecentPosts2"}>
             <div className="RecentPostContainer container">
             <div className="viewAll">
