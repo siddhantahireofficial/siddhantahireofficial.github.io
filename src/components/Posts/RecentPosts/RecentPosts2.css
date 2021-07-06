@@ -32,7 +32,9 @@
     width: 100%;
     border-radius: 4px;
 }
-
+.RecentPosts .RecentPostContainer .post a{
+    text-decoration: none;
+}
 .RecentPosts2 .RecentPostContainer .post h3 {
     font-weight: 700;
     font-size: 26px;

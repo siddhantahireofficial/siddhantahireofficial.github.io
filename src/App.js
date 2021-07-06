@@ -7,8 +7,21 @@ import Blog from './pages/Blog';
 import Home from './pages/Home';
 import Work from './pages/Work';
 import Contact from './pages/Contact';
+import { useEffect } from 'react/cjs/react.development';
+import { client } from './client';
+import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
+import marked from 'marked'
 
 function App() {
+
+  useEffect(()=>{
+    client.getEntries()
+      .then(res => {
+        console.log(res)
+        
+      })
+  },[])
+
   return (
     <>
       <div className="container">

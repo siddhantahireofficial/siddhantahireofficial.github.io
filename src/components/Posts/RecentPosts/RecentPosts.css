@@ -48,6 +48,10 @@
     padding: 1rem;
 }
 
+.RecentPosts .RecentPostContainer .post a{
+    text-decoration: none;
+}
+
 .RecentPosts .RecentPostContainer .post:nth-child(odd) {
     margin: 1rem 0rem 0rem 1%;
 }
@@ -58,15 +62,14 @@
 
 .RecentPosts .RecentPostContainer .post h3 {
     font-weight: 700;
-    font-size: 26px;
-    line-height: 38.19px;
+    font-size: 30px;
     color: var(--navyblue);
     margin-bottom: 1rem;
 }
 
 .RecentPosts .RecentPostContainer .post span {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 21px;
     line-height: 26.44px;
     color: var(--navyblue);
 }
@@ -88,8 +91,7 @@
 .RecentPosts .RecentPostContainer .post p {
     margin-top: 1rem;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 23.5px;
+    font-size: 18px;
     color: var(--navyblue);
 }
 /* for mobile */
@@ -129,6 +131,10 @@
     }
     .RecentPosts .viewAll span:nth-child(2) {
         display: none;
+    }
+
+    .RecentPosts .RecentPostContainer .post p {
+        font-size: 16px;
     }
 
     .RecentPosts .RecentPostContainer .post:nth-child(odd) {

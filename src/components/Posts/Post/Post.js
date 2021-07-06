@@ -16,7 +16,7 @@ const Post = ({blog, data, className}) => {
                     <span>{e.tech}</span>
                 </div>
                 <p>
-                    {e.description}
+                    {e.description} <a href={e.link}>Read More....</a>
                 </p>
                 {blog &&
                     <div className="horizontal-line2"></div>
