@@ -10,73 +10,16 @@ import boxofficebanner from './Images/Box-Office/thumbnail.png';
 import TicTacToeBanner from './Images/Tic-Tac-Toe/thumbnail.png';
 import ninjaquizBanner from './Images/Ninja-Quiz/thumbnail.png';
 import cameoBanner from './Images/cameo/thumbnail.png';
+import lunchBoxBanner from './Images/LunchBox/thumbnail.JPG'
+import portfolio2Banner from './Images/Portfolio2/thumbnail.PNG'
+import FebaBanner from './Images/Feba/thumbnail.PNG'
+import portfolio1Banner from './Images/Portfolio1/thumbnail.PNG'
+import weatherAppBanner from './Images/weather_app/thumbnail.PNG'
+import todolistBanner from './Images/Todo-List/thumbnail.PNG'
+import chatAppJavascriptBanner from './Images/chat-app-javascript/thumbnail.PNG'
+import chatAppBanner from './Images/chat-app/thumbnail.PNG'
 
 
-
-const html = {
-    text: "HTML",
-    icon: <AiFillHtml5 color="#e34c26" />
-}
-const css = {
-    text: "CSS",
-    icon: <IoLogoCss3 text="CSS" color="#264de4" />
-}
-const JavaScript = {
-    text: "JavaScript",
-    icon: <DiJavascript color="#f0db4f" />
-}
-const nodejs = {
-    text: "NodeJS",
-    icon: <FaNodeJs color="#3c873a" />
-}
-const python = {
-    text: "Python",
-    icon: <FaPython color="#FFD43B" />
-}
-const reactJS = {
-    text: "ReactJS",
-    icon: <FaReact color="#61dafb" />
-}
-const mongodb = {
-    text: "MongoDB",
-    icon: <DiMongodb color="#13aa52" />
-}
-const MySQL = {
-    text: "MySQL",
-    icon: <SiMysql color="#4479a1" />
-}
-const PostgreSQL = {
-    text: "PostgreSQL",
-    icon: <SiPostgresql color="#336791" />
-}
-const github = {
-    text: "GitHub",
-    icon: <FaGithub color="#24292e" />
-}
-const mocha = {
-    text: "Mocha",
-    icon: <SiMocha color="#8d6748" />
-}
-const linux = {
-    text: "Linux",
-    icon: <FcLinux />
-}
-const docker = {
-    text: "Docker",
-    icon: <SiDocker color="#007bff" />
-}
-const aws = {
-    text: "AWS",
-    icon: <SiAmazonaws color="#4d5360" />
-}
-const heroku = {
-    text: "Heroku",
-    icon: <DiHeroku color='#79589F' />
-}
-const firebase = {
-    text: "Firebase",
-    icon: <SiFirebase color="#FFCB2B" />
-}
 
 export const data = {
     navLinks: ['Works', 'Blog', 'Contact'],
@@ -181,7 +124,9 @@ export const data = {
                         CRUD operations, Payment Option(work in progress..)`,
             image: shoppingWebsiteBanner,
             demo: 'https://nodejs-shopping-website.herokuapp.com/',
-            code: 'https://github.com/siddhant-ahire/nodejs-shopping-website'
+            code: 'https://github.com/siddhant-ahire/nodejs-shopping-website',
+            featured:false,
+            timeline:2.1
         },
         {
             title: 'Box-office',
@@ -192,7 +137,9 @@ export const data = {
             I created this website in My learning reactJS`,
             image: boxofficebanner,
             demo: 'https://siddhant-ahire.github.io/box-office/#/',
-            code: 'https://github.com/siddhant-ahire/box-office'
+            code: 'https://github.com/siddhant-ahire/box-office',
+            featured:false,
+            timeline:4
         },
         {
             title: 'Tic-Tac-Toe',
@@ -204,7 +151,9 @@ export const data = {
             `,
             image: TicTacToeBanner,
             demo: 'https://siddhant-ahire.github.io/tic-toc-toe/dist/',
-            code: 'https://github.com/siddhant-ahire/tic-toc-toe'
+            code: 'https://github.com/siddhant-ahire/tic-toc-toe',
+            featured:false,
+            timeline:3
         },
         {
             title: 'Ninja-Quiz',
@@ -214,7 +163,9 @@ export const data = {
             I made this web page while learning javascript.`,
             image: ninjaquizBanner,
             demo: 'https://siddhant-ahire.github.io/anime-quiz/',
-            code: 'https://github.com/siddhant-ahire/anime-quiz'
+            code: 'https://github.com/siddhant-ahire/anime-quiz',
+            featured:false,
+            timeline:1
         },
         {
             title: 'Cameo',
@@ -224,7 +175,108 @@ export const data = {
             I made this web page while learning Bootstrap.`,
             image: cameoBanner,
             demo: 'https://siddhant-ahire.github.io/Bootstrap-Cameo/',
-            code: 'https://github.com/siddhant-ahire/Bootstrap-Cameo/'
+            code: 'https://github.com/siddhant-ahire/Bootstrap-Cameo/',
+            featured:false,
+            timeline:2
+        },
+        {
+            title: 'LunchBox',
+            year: 2021,
+            tech: [{ text: 'ReactJS, Bootstrap, Material-UI'}],
+            description: `This is a restaurant website that i created for one of my client. Main purpose of the website 
+                is giving good interface, interactive and secure payment to customer.`,
+            image: lunchBoxBanner,
+            demo: 'https://siddhant-ahire.github.io/LunchBox/#/',
+            code: '',
+            featured:true,
+            timeline:7
+        },
+        {
+            title: 'Portfolio2',
+            year: 2020,
+            tech: [{ text: 'ReactJS, Material-UI'}],
+            description:`I created this portfolio website to learn Material-UI with ReactJS. This just a simple portfolio
+                website that uses material-UI components.`,
+            image: portfolio2Banner,
+            demo: 'https://siddhant-ahire.github.io/portfolio2/#/',
+            code: 'https://github.com/siddhant-ahire/portfolio2',
+            featured:false,
+            timeline:5
+        },
+        {
+            title: 'feba.co.in',
+            year: 2021,
+            tech: [{ text: 'ReactJS, Material-UI, ExpressJS, NodeJS, PostgresSQL, AWS'}],
+            description:`I created CRM(Admin Dashboard) for the website , implementd login/register module(login with otp, simple login),
+            created lead form for the website and solved lots of minor errors, bugs in the website and also deployed of all these
+            changes on AWS Ec2 instance.`,
+            image: FebaBanner,
+            demo: 'https://www.feba.co.in/',
+            code: '',
+            featured:true,
+            timeline:6
+        },
+        {
+            title: 'Portfolio1',
+            year: 2019,
+            tech: [{ text: 'Bootstrap, NodeJS, Express, NodeMailer'}],
+            description:`This is simple resume webpage to show your skills, projects, education and contact funtionality using nodemailer. `,
+            image: portfolio1Banner,
+            demo: '',
+            code: '',
+            featured:false,
+            timeline:2.2
+        },
+        {
+            title: 'weather_app',
+            year: 2019,
+            tech: [{ text: 'Javascript'}],
+            description:`This is simple weather app using javascript, Html, Css`,
+            image: weatherAppBanner,
+            demo: 'https://siddhant-ahire.github.io/weather_app/',
+            code: 'https://github.com/siddhant-ahire/weather_app',
+            featured:false,
+            timeline:1.8
+        },
+        {
+            title: 'todo-list',
+            year: 2019,
+            tech: [{ text: 'Javascript'}],
+            description:`This is simple todo list page using javascript, Html, Css`,
+            image: todolistBanner,
+            demo: 'https://siddhant-ahire.github.io/todo-list/',
+            code: 'https://github.com/siddhant-ahire/todo-list',
+            featured:false,
+            timeline:1.7
+        },
+        {
+            title: 'chat-app-javascript',
+            year: 2019,
+            tech: [{ text: 'Javascript'}],
+            description:`This is simple chat room app using javascript, Html, Css`,
+            image: chatAppJavascriptBanner,
+            demo: 'https://siddhant-ahire.github.io/chat-app-javascript/',
+            code: 'https://github.com/siddhant-ahire/chat-app-javascript',
+            featured:false,
+            timeline:1.9
+        },
+        {
+            title: 'Chat-App',
+            year: 2020,
+            tech: [{ text: 'ReactJS, Firebase'}],
+            description:`This is a online Chatting app similar to the discord and telegram webApp. 
+            Features: 
+            1) login with Facebook or Google 
+            2) Create and Edit the room 
+            3) Send Messages, Files(photo, video, etc...),voice recordings in any group 
+            4) if you are admin of the group you can delete messages.
+            I made this app while learning ReactJS.
+            `,
+            image: chatAppBanner,
+            demo: 'https://chat-web-app-6b977.web.app/',
+            code: '',
+            featured:true,
+            timeline:5.1
         },
     ],
     footer: {
@@ -232,3 +284,69 @@ export const data = {
         text: `Made with ❤️ by Siddhant Ahire`
     }
 }
+
+
+// const html = {
+//     text: "HTML",
+//     icon: <AiFillHtml5 color="#e34c26" />
+// }
+// const css = {
+//     text: "CSS",
+//     icon: <IoLogoCss3 text="CSS" color="#264de4" />
+// }
+// const JavaScript = {
+//     text: "JavaScript",
+//     icon: <DiJavascript color="#f0db4f" />
+// }
+// const nodejs = {
+//     text: "NodeJS",
+//     icon: <FaNodeJs color="#3c873a" />
+// }
+// const python = {
+//     text: "Python",
+//     icon: <FaPython color="#FFD43B" />
+// }
+// const reactJS = {
+//     text: "ReactJS",
+//     icon: <FaReact color="#61dafb" />
+// }
+// const mongodb = {
+//     text: "MongoDB",
+//     icon: <DiMongodb color="#13aa52" />
+// }
+// const MySQL = {
+//     text: "MySQL",
+//     icon: <SiMysql color="#4479a1" />
+// }
+// const PostgreSQL = {
+//     text: "PostgreSQL",
+//     icon: <SiPostgresql color="#336791" />
+// }
+// const github = {
+//     text: "GitHub",
+//     icon: <FaGithub color="#24292e" />
+// }
+// const mocha = {
+//     text: "Mocha",
+//     icon: <SiMocha color="#8d6748" />
+// }
+// const linux = {
+//     text: "Linux",
+//     icon: <FcLinux />
+// }
+// const docker = {
+//     text: "Docker",
+//     icon: <SiDocker color="#007bff" />
+// }
+// const aws = {
+//     text: "AWS",
+//     icon: <SiAmazonaws color="#4d5360" />
+// }
+// const heroku = {
+//     text: "Heroku",
+//     icon: <DiHeroku color='#79589F' />
+// }
+// const firebase = {
+//     text: "Firebase",
+//     icon: <SiFirebase color="#FFCB2B" />
+// }
