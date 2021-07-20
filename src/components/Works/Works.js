@@ -17,7 +17,7 @@ const Works = ({ works }) => {
                     return b.timeline - a.timeline;
                 }).map((v, i) => (
                     // <Pulse left={i%2 === 0 ? true : false} right={i%2 != 0 ? true : false}>
-                    <>
+                    <React.Fragment key={i}>
                         {!works && v.featured &&
                             <>
                                 <Work data={v} index={i} />
@@ -30,7 +30,7 @@ const Works = ({ works }) => {
                                 <div className="horizontal-line"></div>
                             </>
                         }
-                    </>
+                    </React.Fragment>
                     // </Pulse>
 
                 ))}

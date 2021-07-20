@@ -11,6 +11,7 @@
     margin: 0.5rem 0.5rem;
     list-style-type: none;
     color: var(--navyblue);
+    cursor: pointer;
 }
 
 .footer ul li svg{
@@ -18,7 +19,11 @@
     height: 30px;
 }
 .footer span {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 21px;
     color: var(--navyblue);
+}
+
+.footer ul li:hover {
+    color: var(--seablue);
 }

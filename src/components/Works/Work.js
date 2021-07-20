@@ -27,7 +27,7 @@ const Work = ({data,index}) => {
                 <span className="year-button">{data.year}</span><span className="tech">{mobile ? (data.tech[0].text).slice(0,15):(data.tech[0].text)}{mobile&&('...')}</span>
                 <p>
                     {data.description}<br />
-                    <a href={data.demo} className="demo-button">Demo</a>&nbsp;&nbsp;&nbsp;
+                    <a href={data.demo} target="_blank" className="demo-button">Demo</a>&nbsp;&nbsp;&nbsp;
                     {data.code && <a href={data.code} className="code-button">Code</a>}
                 </p>
             </div>

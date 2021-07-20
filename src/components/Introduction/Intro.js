@@ -35,7 +35,7 @@ const Intro = () => {
                 <div className="list">
 
                 {
-                    data.Introduction.skills.map((s,i)=><Bounce top={i%2 === 0 ? true : false} bottom={i%2 != 0 ? true : false} duration={i*200+5000}><div className="tooltip" key={i}>{s.icon}<span className="tooltiptext" >{s.text}</span></div></Bounce>)
+                    data.Introduction.skills.map((s,i)=><Bounce key={i} top={i%2 === 0 ? true : false} bottom={i%2 != 0 ? true : false} duration={i*200+5000}><div className="tooltip" key={i}>{s.icon}<span className="tooltiptext" >{s.text}</span></div></Bounce>)
                 }
                 </div>   
                 </div>

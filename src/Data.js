@@ -26,7 +26,7 @@ export const data = {
     Introduction: {
         heading: 'Hi, I am Siddhant,',
         heading2: ['Full Stack Developer', 'MERN Stack Developer'],
-        paragraph: 'A web designer and developer from Mumbai in the India. I create websites to help people go further online ',
+        paragraph: 'A Web Designer, Web Developer and Digital Marketar from Mumbai in the India. I create websites to help people go further online ',
         buttonText: 'Download Resume',
         profileImage: profileImage,
         skills: [{
@@ -97,20 +97,12 @@ export const data = {
     },
     Posts: [
         {
-            name: 'How to create a live polling web page using MERN Stack',
-            date: '07 July 2021',
-            tech: 'MERN, Pusher',
-            description: `In this website you will learn how to get data in realtime using pusher and represent that 
-                            data on Bar Chart using chart.js`,
-            link: 'https://siddhantahire98.medium.com'
-        },
-        {
-            name: 'How to create a live polling web page using MERN Stack',
-            date: '07 July 2021',
-            tech: 'MERN, Pusher',
-            description: `In this website you will learn how to get data in realtime using pusher and represent that 
-                            data on Bar Chart using chart.js`,
-            link: 'https://siddhantahire98.medium.com'
+            name: 'How to fix the Blank screen After a Static Deployment with create-react-app',
+            date: '20 July 2021',
+            tech: 'ReactJS',
+            description: `It’s one of the most annoying situations after deploying a static React app: After all that work, you finally deployed your app for production. But as you visit the site — instead of your freshly deployed app — you see … nothing.
+            A blank, white, screen.`,
+            link: 'https://medium.com/@siddhantahire98/how-to-fix-the-blank-screen-after-a-static-deployment-with-create-react-app-2e76983a5d5d'
         },
     ],
     Works: [
@@ -280,7 +272,22 @@ export const data = {
         },
     ],
     footer: {
-        icons: [<FaFacebookSquare />, <FaInstagram />, <FaTwitter />, <FaLinkedin />],
+        icons: [{
+            link:'https://facebook.com/siddhant.ahire.7731',
+            icon:<FaFacebookSquare />
+        },
+        {
+            link:'https://facebook.com/siddhant.ahire',
+            icon:<FaInstagram />
+        },
+        {
+            link:'https://facebook.com/siddhant.ahire',
+            icon:<FaTwitter />
+        },
+        {
+            link:'https://linkedin.in/in/siddhant-ahire',
+            icon:<FaLinkedin />
+        }],
         text: `Made with ❤️ by Siddhant Ahire`
     }
 }

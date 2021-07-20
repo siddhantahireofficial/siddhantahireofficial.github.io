@@ -22,13 +22,17 @@ const RecentPosts = ({blog}) => {
                 {!blog&&
                     <>
                     <span>Recent Posts</span>
-                    <span onClick={onViewAll}>{viewAll ? 'View All' : 'Close All'}</span>
+                    {data.Posts.length >2 &&
+                        <span onClick={onViewAll}>{viewAll ? 'View All' : 'Close All'}</span>
+                    }
                     </>
                 }
             </div>
                 <Post data={blog ? data.Posts :RecentPosts} blog={blog} className="post" />
                 {!blog && isTabletOrMobile &&
-                    <h3 onClick={onViewAll}>{viewAll ? 'View All' : 'Close All'}</h3>}
+                    (data.Posts.length >2 &&
+                    <h3 onClick={onViewAll}>{viewAll ? 'View All' : 'Close All'}</h3>
+                    )}
             </div>
         </div>
     )

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Redirect } from 'react-router'
 import { data } from '../../Data'
 import './Footer.css'
 
@@ -8,7 +9,11 @@ const Footer = () => {
             <div className="footer">
                 <ul>
                 {data.footer.icons.map((e,i) => (
-                      <li key={i}>{e}</li>  
+                      <a key={i} href={e.link} target="_blank">
+                          <li>
+                          {e.icon}
+                        </li>  
+                          </a>
                     ))}
                 </ul>
                 <span>

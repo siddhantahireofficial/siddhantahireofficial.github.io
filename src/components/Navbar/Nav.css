@@ -20,6 +20,9 @@ nav {
   color: var(--seablue);
 }
 
+.nav-links li a:hover{
+  color: var(--seablue);
+}
 .nav-links li a {
   color: var(--black);
   font-weight: 500;
