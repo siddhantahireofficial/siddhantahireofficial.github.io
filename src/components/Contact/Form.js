@@ -1,8 +1,21 @@
 import React from 'react'
 import image from '../../Images/undraw-contact.svg'
 import './Form.css'
+import emailJs from 'emailjs-com'
 
 const Form = () => {
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailJs.sendForm('service_p9lcppb','template_xvb2n9c',e.target, 'user_PkwzqFXg3Ab9e1HAOSwfi')
+        .then((result)=>{
+            console.log(result)
+        },(error)=> {
+            console.log(error.text);
+        })
+        e.target.reset();
+    }
+
     return (
         <div className="contact">
             <div className="row">
@@ -12,7 +25,7 @@ const Form = () => {
                     <p><img src={image} alt="Image" className="img" /></p>
                 </div>
                 <div className="col-2">
-                    <form id="contactForm" name="contactForm">
+                    <form id="contactForm" name="contactForm" onSubmit={sendEmail}>
                         <div className="row">
                             <div className="col">
                                 <input type="text" className="form-control" name="name" id="name" placeholder="Your name" />
@@ -34,7 +47,7 @@ const Form = () => {
                             </div>
                         </div>
                         <div className="btn">
-                            <button>Send Message</button>
+                            <button type="submit">Send Message</button>
                         </div>
                     </form>
                 </div>
