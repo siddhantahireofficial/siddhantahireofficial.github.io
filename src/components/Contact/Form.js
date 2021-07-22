@@ -7,7 +7,7 @@ const Form = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        emailJs.sendForm('service_p9lcppb','template_xvb2n9c',e.target, 'user_PkwzqFXg3Ab9e1HAOSwfi')
+        emailJs.sendForm(process.env.REACT_APP_SERVICE_ID,process.env.REACT_APP_TEMPLATE_ID,e.target, process.env.REACT_APP_USER_ID)
         .then((result)=>{
             console.log(result)
         },(error)=> {

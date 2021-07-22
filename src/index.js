@@ -6,7 +6,7 @@ import {BrowserRouter as Dev, HashRouter as Prod} from 'react-router-dom'
 import './index.css';
 
 ReactDOM.render(
-    <Dev>
+    <Dev basename={process.env.REACT_APP_PUBLIC_URL}>
     <App />
     </Dev>,
   document.getElementById('root')
