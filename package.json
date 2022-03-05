@@ -1,7 +1,7 @@
 {
   "name": "portfolio-scratch",
   "version": "0.1.0",
-  "homepage":"https://siddhant-ahire.github.io",
+  "homepage": "https://siddhant-ahire.github.io",
   "private": true,
   "dependencies": {
     "@contentful/rich-text-html-renderer": "^15.0.0",
@@ -22,7 +22,7 @@
     "react-smooth-collapse": "^2.1.0",
     "react-typed": "^1.2.0",
     "web-vitals": "^1.1.2"
-  }, 
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
