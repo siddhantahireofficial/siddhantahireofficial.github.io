@@ -56,10 +56,10 @@ const Intro = () => {
         <p className="status">
           Current Status: Working in{' '}
           <a
-            href="https://www.linkedin.com/company/binary-numbers/about/"
+            href="https://www.linkedin.com/company/serverlane-technologies/?originalSubdomain=in"
             target="_blank"
           >
-            BinaryNumbers.io
+            ServerLane Technologies
           </a>
         </p>
       </div>

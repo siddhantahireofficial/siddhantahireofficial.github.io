@@ -48,6 +48,8 @@ import portfolio1Banner from './Images/Portfolio1/thumbnail.PNG'
 import portfolio4Banner from './Images/portfolio4/thumbnail.png'
 import aniketgift from './Images/aniket-gift/thumbnail.png'
 import cinemaAkilBanner from './Images/cinema-akil/thumbnail.png'
+import empireCinemaBanner from './Images/Empire-Cinema/empire-cinema.png'
+import honorBullion from './Images/honor-bullion/honor-bullion.png'
 import EcommerceBanner from './Images/Ecommerce-website/thumbnail.png'
 import weatherAppBanner from './Images/weather_app/thumbnail.PNG'
 import todolistBanner from './Images/Todo-List/thumbnail.PNG'
@@ -159,6 +161,28 @@ export const data = {
     },
   ],
   Works: [
+    {
+      title: 'Honor Bullion',
+      year: 2023,
+      tech: [{ text: 'NodeJS, PostgreSQL' }],
+      description: `offering customers to pure and certified products made out of precious metals like Gold and Silver. Worked on the backend and dashboard.`,
+      image: honorBullion,
+      demo: 'https://honorbullion.com/',
+      code: '',
+      featured: true,
+      timeline: 8.4,
+    },
+    {
+      title: 'Empire Cinema',
+      year: 2022,
+      tech: [{ text: 'VueJS, PHP, MySQL, Redis' }],
+      description: `Empire cinema is a website to book movie tickets online. `,
+      image: empireCinemaBanner,
+      demo: 'https://empirecinemas.com/',
+      code: '',
+      featured: true,
+      timeline: 8.3,
+    },
     {
       title: 'Cinema Akil',
       year: 2022,
