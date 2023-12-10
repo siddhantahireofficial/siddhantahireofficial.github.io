@@ -56,10 +56,10 @@ const Intro = () => {
         <p className="status">
           Current Status: Working in{' '}
           <a
-            href="https://www.linkedin.com/company/serverlane-technologies/?originalSubdomain=in"
+            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjb0OHGooWDAxVSTmwGHbAdCDMQFnoECBkQAQ&url=https%3A%2F%2Fin.linkedin.com%2Fcompany%2Fenpointein&usg=AOvVaw3Vx1nKuX_xxrthV_Bi4Ycv&opi=89978449"
             target="_blank"
           >
-            ServerLane Technologies
+            enpointe.io
           </a>
         </p>
       </div>
