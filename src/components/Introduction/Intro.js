@@ -2,6 +2,7 @@ import React from 'react'
 import { data } from '../../Data'
 import Typed from 'react-typed'
 import Bounce from 'react-reveal/Bounce'
+import ResumePDF from '../../docs/Full_Stack_Developer.pdf'
 import './Intro.css'
 
 const Intro = () => {
@@ -48,7 +49,7 @@ const Intro = () => {
         </Bounce>
         <div className="resume">
           <Bounce bottom duration={4000}>
-            <a href="#" className="button1">
+            <a href={ResumePDF} className="button1" target='__blank'>
               Download Resume
             </a>
           </Bounce>

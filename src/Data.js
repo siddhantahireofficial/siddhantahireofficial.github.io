@@ -151,8 +151,17 @@ export const data = {
   Posts: [
     {
       name:
+        'How to create form builder using ReactJS?',
+      date: 'Apr 1, 2023',
+      tech: 'ReactJS',
+      description: `Easy way to generate forms dynamically as per the required fields.`,
+      link:
+        'https://medium.com/@siddhantahire98/how-to-create-form-builder-using-reactjs-ef63c462e9de',
+    },
+    {
+      name:
         'How to fix the Blank screen After a Static Deployment with create-react-app',
-      date: '20 July 2021',
+      date: 'July 20, 2021',
       tech: 'ReactJS',
       description: `It’s one of the most annoying situations after deploying a static React app: After all that work, you finally deployed your app for production. But as you visit the site — instead of your freshly deployed app — you see … nothing.
             A blank, white, screen.`,
